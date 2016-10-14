@@ -1,0 +1,16 @@
+{
+  "name": "IoTClient",
+  "keywords": "IoTClient, IOT, MQTT",
+  "description": "IoTClient library for Arduino or Wiring or ESP8266",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nikodemusP/IoTClient"
+  },
+  "version": "0.1",
+  "exclude": [
+    "*.png",
+    "*.zip"
+  ],
+  "frameworks": "arduino",
+  "platforms": "*"
+}

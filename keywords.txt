@@ -1,0 +1,32 @@
+#######################################
+# Syntax Coloring Map For IoTClient
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+IoTClient	 KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+	IOTClient KEYWORD2
+	
+	setServer KEYWORD2
+	setServerTopic KEYWORD2
+	setClientId KEYWORD2
+	setCallback KEYWORD2
+    broadcast KEYWORD2
+    publish KEYWORD2
+    loop KEYWORD2
+	
+#######################################
+# Instances (KEYWORD2)
+#######################################
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+
