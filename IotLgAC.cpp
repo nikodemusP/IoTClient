@@ -106,34 +106,33 @@ void IoTLgAC::setAirFlow(int airFlow)
 	activate();
 }
 
-void IoTLgAC::setParameter(JsonObject& iotMsg)
+void IoTLgAC::setParameter(const char* parameter, const char* value)
 {
-	if (iotMsg.containsKey("temp"))
+	if (strcmp("temp",parameter) == 0)
 	{
-		int value = iotMsg["temp"];
-		setTemperature(value);
+		int _value = atoi(value);
+		setTemperature(_value);
 	}
-	if (iotMsg.containsKey("airClean"))
+	if (strcmp("airClean",parameter) == 0)
 	{
-		int value = iotMsg["airClean"];
-		setAirClean(value);
+		int _value = atoi(value);
+		setAirClean(_value);
 	}
-	if (iotMsg.containsKey("airSwing"))
+	if (strcmp("airSwing",parameter) == 0)
 	{
-		int value = iotMsg["airSwing"];
-		setAirSwing(value);
+		int _value = atoi(value);
+		setAirSwing(_value);
 	}
-	if (iotMsg.containsKey("airFlow"))
+	if (strcmp("airFlow",parameter) == 0)
 	{
-		int value = iotMsg["airFlow"];
-		setAirFlow(value);
+		int _value = atoi(value);
+		setAirFlow(_value);
 	}
-	if (iotMsg.containsKey("power"))
+	if (strcmp("power",parameter) == 0)
 	{
-		String value = iotMsg["power"];
-		if (value.equals("ON"))
+		if (strcmp(value,"ON") == 0)
 			powerOn();
-		if (value.equals("OFF"))
+		if (strcmp(value,"OFF") == 0)
 			powerOff();
 	}	
 }
